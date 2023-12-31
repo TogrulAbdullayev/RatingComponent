@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply font-Overpass box-border;
+}
+
+main section ul li label {
+  @apply bg-my-db-blue rounded-full w-12 h-12 flex justify-center items-center text-my-md-grey transition-all hover:bg-my-orange hover:text-white cursor-pointer;
+  @apply max-ml:w-10 max-ml:h-10;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="flex justify-center items-center min-h-screen bg-my-very-db-blue">
+  <main>
+    <section class="bg-gray-800 w-96 h-96 p-7 rounded-4xl flex justify-center items-center flex-col gap-3 transition-all max-ml:w-resp max-ml:h-resp max-ml:p-5 max-ml:rounded-3xl max-ml:gap-2.5">
+      <!-- Rating state start -->
+      <div class="bg-my-db-blue w-12 h-12 rounded-full flex justify-center items-center self-start -mt-1 max-ml:w-10 max-ml:h-10 max-ml:-mt-0.75">
+        <img src="../images/icon-star.svg" alt="star">
+      </div>
+      <h1 class="text-white text-3xl font-700 self-start mt-2 max-ml:text-2xl max-ml:mt-1.5">How did we do?</h1>
+      <p class="text-my-lg-grey text-p max-ml:text-pl">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      <ul class="flex gap-5 mt-3 max-ml:gap-4 max-ml:mt-2.5">
+        <li class="rating">
+          <input class="hidden peer" type="radio" name="rating" id="r1">
+          <label class="peer-checked:bg-my-lg-grey peer-checked:text-white" for="r1">1</label>
+        </li>
+        <li class="rating">
+          <input class="hidden peer" type="radio" name="rating" id="r2">
+          <label class="peer-checked:bg-my-lg-grey peer-checked:text-white" for="r2">2</label>
+        </li>
+        <li class="rating">
+          <input class="hidden peer" type="radio" name="rating" id="r3">
+          <label class="peer-checked:bg-my-lg-grey peer-checked:text-white" for="r3">3</label>
+        </li>
+        <li class="rating">
+          <input class="hidden peer" type="radio" name="rating" id="r4">
+          <label class="peer-checked:bg-my-lg-grey peer-checked:text-white" for="r4">4</label>
+        </li>
+        <li class="rating">
+          <input class="hidden peer" type="radio" name="rating" id="r5">
+          <label class="peer-checked:bg-my-lg-grey peer-checked:text-white" for="r5">5</label>
+        </li>
+      </ul>
+      <button class="uppercase text-white tracking-widest-2xl bg-my-orange w-80 h-11 mt-5 rounded-full transition-all hover:text-my-orange hover:bg-white max-ml:tracking-widest-xl max-ml:w-64 max-ml:h-9 max-ml:mt-4 max-ml:text-xs">Submit</button>
+      <!-- Rating state end -->
+    </section>
+    <section class="bg-gray-800 w-96 h-96 p-6 rounded-4xl justify-center items-center flex-col gap-6 hidden max-ml:w-resp max-ml:h-resp max-ml:p-5 max-ml:rounded-3xl max-ml:gap-5 transition-all">
+      <!-- Thank you state start -->
+      <img src="../images/illustration-thank-you.svg" alt="thank_you">
+      <div class="text-p text-my-orange font-normal w-fit bg-my-db-blue box-content px-4 py-1 rounded-full max-ml:text-pl max-ml:px-3 max-ml:py-0.75">You selected <span>nothing</span> out of 5</div>
+      <h1 class="text-3xl font-700 text-white max-ml:text-2xl">Thank you!</h1>
+      <p class="text-center text-p text-my-md-grey -mt-2 max-ml:text-pl max-ml:-mt-1.5">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+      <!-- Thank you state end -->
+    </section>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
